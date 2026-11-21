@@ -4,172 +4,285 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#ffe5ef">
-  <meta name="description" content="A little universe made by Rihan for Shrejal.">
-  <title>Rihan × Shrejal — Our Little Universe</title>
+  <meta name="theme-color" content="#fff5f7">
+
+  <title>Rihan × Shrejal | A Little Love Story</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&family=Dancing+Script:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <div class="ambient" aria-hidden="true"></div>
 
+<body>
+
+  <!-- BACKGROUND DECORATION -->
+  <div class="background-petals" id="backgroundPetals"></div>
+
+  <!-- MUSIC -->
   <audio id="backgroundMusic" loop preload="none">
-    <source src="vidssave.com%2520Aarzu%2520(with%2520Asim%2520Azhar)%2520Official%2520Music%2520Video%2520_%2520Asim%2520Azhar,%2520Noor,%2520Khan,%2520Madhurxo%252048KBPS.mp3" type="audio/mpeg">
+    <source src="assets/aarzu.mp3" type="audio/mpeg">
   </audio>
 
-  <aside class="music-player" id="musicPlayer" aria-label="Music player">
-    <button id="musicToggle" class="music-disc" aria-label="Play music">▶</button>
-    <div class="music-info">
-      <strong>Aarzu</strong>
-      <span>Asim Azhar</span>
-      <small id="musicStatus">Music paused</small>
+  <button class="music-control" id="musicToggle" aria-label="Play or pause music">
+    ♫
+  </button>
+
+  <!-- PAGE 1: WELCOME -->
+  <section class="page active" id="welcomePage">
+
+    <div class="welcome-card">
+
+      <span class="small-heading">A LITTLE SOMETHING FOR YOU</span>
+
+      <div class="welcome-flower">✿</div>
+
+      <h1>
+        Rihan
+        <span>×</span>
+        Shrejal
+      </h1>
+
+      <p class="welcome-subtitle">
+        Some stories are written in the stars.
+        Ours began with a simple hello.
+      </p>
+
+      <button class="main-button" id="enterButton">
+        ENTER MY WORLD
+        <span>♡</span>
+      </button>
+
+      <div class="welcome-footer">
+        MADE WITH LOVE, JUST FOR YOU
+      </div>
+
     </div>
-    <label class="volume-control" for="volumeControl" title="Volume">
-      <span>♪</span>
-      <input id="volumeControl" type="range" min="0" max="1" step="0.05" value="0.65">
-    </label>
-  </aside>
 
-  <main>
-    <section class="screen active" id="welcome">
-      <div class="galaxy" aria-hidden="true" id="galaxy"></div>
-      <div class="welcome-content">
-        <span class="eyebrow">A little something made with love</span>
-        <div class="welcome-heart">♡</div>
-        <h1>RIHAN <span>×</span> SHREJAL</h1>
-        <p>I created this little universe just for you.</p>
-        <button class="primary-btn" id="startButton">
-          START OUR UNIVERSE <span>♥</span>
-        </button>
-        <p class="tiny-note">Best experienced with sound on ✨</p>
-      </div>
-      <div class="welcome-teddies" aria-hidden="true">🧸　💗　🧸</div>
-    </section>
+  </section>
 
-    <section class="screen" id="teddyWorld">
-      <div class="section-heading">
-        <span class="eyebrow">A little world of cuteness</span>
-        <h2>Welcome to Teddy World</h2>
-        <p>Tap a teddy. Each one has a little message for you.</p>
-      </div>
-      <div class="teddy-grid">
-        <button class="teddy-card" data-message="You make ordinary conversations feel special. ❤️">
-          <span class="teddy-art">🧸🌹</span>
-          <strong>Rihan's teddy</strong>
-          <small>A rose for you</small>
-        </button>
-        <button class="teddy-card" data-message="I hope your days are filled with reasons to smile. 💗">
-          <span class="teddy-art">🧸💖</span>
-          <strong>Shrejal's teddy</strong>
-          <small>A heart for you</small>
-        </button>
-        <button class="teddy-card" data-message="Never stop being your funny, wonderful self. ✨">
-          <span class="teddy-art">🐻🎀</span>
-          <strong>Our little teddy</strong>
-          <small>Made of happiness</small>
-        </button>
-      </div>
-      <div class="message-pill" id="teddyMessage" aria-live="polite">
-        Choose your teddy bear 💌
-      </div>
-      <button class="primary-btn" data-go="letters">Continue to our letters →</button>
-    </section>
 
-    <section class="screen" id="letters">
-      <div class="section-heading">
-        <span class="eyebrow">Words from my heart</span>
-        <h2>Two little letters</h2>
-        <p>Some things are better said from the heart.</p>
-      </div>
-      <div class="envelope-grid">
-        <button class="envelope-card" data-letter="storyLetter">
-          <span class="envelope-art"><span class="wax-seal">♥</span></span>
-          <strong>OUR STORY</strong>
-          <small>How our little universe began</small>
-          <span class="open-hint">Open letter ↗</span>
-        </button>
-        <button class="envelope-card" data-letter="loveLetter">
-          <span class="envelope-art"><span class="wax-seal">♥</span></span>
-          <strong>HOW MUCH I LOVE YOU</strong>
-          <small>A few things I want you to know</small>
-          <span class="open-hint">Open letter ↗</span>
-        </button>
-      </div>
-      <article class="letter-paper" id="storyLetter" hidden>
-        <button class="close-letter" aria-label="Close letter">×</button>
-        <div class="letter-top">✦ A LETTER FOR SHREJAL ✦</div>
-        <h3>Our Story</h3>
-        <div class="letter-copy" id="storyContent"></div>
-        <div class="letter-signature">With love, Rihan ♥</div>
-      </article>
-      <article class="letter-paper" id="loveLetter" hidden>
-        <button class="close-letter" aria-label="Close letter">×</button>
-        <div class="letter-top">✦ FROM MY HEART ✦</div>
-        <h3>How Much I Love You</h3>
-        <div class="letter-copy" id="loveContent"></div>
-        <div class="letter-signature">Always wishing you happiness, Rihan ♥</div>
-      </article>
-      <button class="secondary-btn" data-go="universe">Explore our universe →</button>
-    </section>
+  <!-- PAGE 2: ENVELOPE -->
+  <section class="page" id="envelopePage">
 
-    <section class="screen" id="universe">
-      <div class="section-heading">
-        <span class="eyebrow">Five little stars</span>
-        <h2>Our Little Universe</h2>
-        <p>Every star holds a message. Tap to discover it.</p>
-      </div>
-      <div class="constellation">
-        <svg viewBox="0 0 320 280" class="constellation-lines" aria-hidden="true">
-          <path d="M160 25 L75 95 L105 190 L215 190 L245 95 Z"
-                fill="none" stroke="rgba(235,91,139,.5)" stroke-width="2"
-                stroke-dasharray="4 7"/>
-          <path d="M75 95 L160 25 L245 95 L215 190 L105 190 Z"
-                fill="none" stroke="rgba(235,91,139,.35)" stroke-width="1"/>
-        </svg>
-        <button class="star-node star-one" data-star="0" aria-label="Star one">✦</button>
-        <button class="star-node star-two" data-star="1" aria-label="Star two">✦</button>
-        <button class="star-node star-three" data-star="2" aria-label="Star three">✦</button>
-        <button class="star-node star-four" data-star="3" aria-label="Star four">✦</button>
-        <button class="star-node star-five" data-star="4" aria-label="Star five">✦</button>
-      </div>
-      <div class="star-message" id="starMessage" aria-live="polite">
-        <span>✧</span> Tap a glowing star <span>✧</span>
-      </div>
-      <button class="primary-btn" data-go="proposal">One last thing… ♥</button>
-    </section>
+    <div class="page-heading">
+      <span class="small-heading">A LITTLE SURPRISE</span>
 
-    <section class="screen proposal-screen" id="proposal">
-      <div class="proposal-glow" aria-hidden="true"></div>
-      <div class="proposal-card">
-        <span class="eyebrow">A question from Rihan</span>
-        <div class="proposal-heart">♡</div>
-        <h2>SHREJAL,<br>WILL YOU BE MINE?</h2>
-        <p>There's something special I've wanted to ask you.</p>
-        <div class="proposal-actions">
-          <button class="primary-btn yes-button" id="yesButton">YES ♥</button>
-          <button class="secondary-btn" id="timeButton">I NEED SOME TIME 💗</button>
+      <h2>Something for you...</h2>
+
+      <p>
+        I have written something that comes straight from my heart.
+      </p>
+    </div>
+
+    <div class="envelope-area">
+
+      <button class="envelope" id="openEnvelope" aria-label="Open your letter">
+
+        <div class="envelope-back"></div>
+
+        <div class="letter-preview">
+          <span>DEAR SHREJAL,</span>
+          <p>A little story about us...</p>
         </div>
-        <p class="tiny-note">Whatever you choose, your feelings matter.</p>
-        <p class="response-message" id="responseMessage" aria-live="polite"></p>
-      </div>
-    </section>
 
-    <section class="celebration-screen" id="celebration" hidden>
-      <div class="celebration-effects" id="celebrationEffects" aria-hidden="true"></div>
-      <div class="celebration-content">
-        <span class="celebration-kicker">A moment to remember</span>
-        <div class="celebration-teddies">🧸　💗　🧸</div>
-        <h2>YOU JUST MADE<br>MY UNIVERSE BRIGHTER.</h2>
-        <p>Forever a special part of my universe —</p>
-        <h3>Rihan <span>♥</span> Shrejal</h3>
-        <p class="notification-status" id="notificationStatus" aria-live="polite">
-          Saving your response…
+        <div class="envelope-front"></div>
+
+        <div class="envelope-flap"></div>
+
+        <div class="envelope-seal">♡</div>
+
+      </button>
+
+      <p class="envelope-caption">
+        TAP THE ENVELOPE TO OPEN
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- PAGE 3: OUR STORY LETTER -->
+  <section class="page" id="storyPage">
+
+    <div class="letter-container">
+
+      <span class="small-heading">A LETTER FROM RIHAN</span>
+
+      <article class="letter-sheet">
+
+        <div class="letter-decoration">✿</div>
+
+        <p class="letter-greeting">Dear Shrejal,</p>
+
+        <h2>Our Little Story</h2>
+
+        <div class="letter-content" id="storyContent">
+
+          <p>
+            [Write how your story started here.]
+          </p>
+
+          <p>
+            [Add your favourite memories and special moments here.]
+          </p>
+
+          <p>
+            [Write what makes your connection special.]
+          </p>
+
+        </div>
+
+        <p class="letter-signature">
+          With love,<br>
+          Rihan ♡
         </p>
-        <button class="primary-btn" id="replayButton">REPLAY CELEBRATION ↻</button>
+
+      </article>
+
+      <button class="main-button next-button" id="storyNextButton">
+        TURN THE PAGE →
+      </button>
+
+    </div>
+
+  </section>
+
+
+  <!-- PAGE 4: LOVE LETTER -->
+  <section class="page" id="lovePage">
+
+    <div class="letter-container">
+
+      <span class="small-heading">A FEW WORDS FROM MY HEART</span>
+
+      <article class="letter-sheet">
+
+        <div class="letter-decoration">♡</div>
+
+        <p class="letter-greeting">For you, Shrejal...</p>
+
+        <h2>Things I Want You To Know</h2>
+
+        <div class="letter-content" id="loveContent">
+
+          <p>
+            [Write what you appreciate about her.]
+          </p>
+
+          <p>
+            [Add the little things that make her special to you.]
+          </p>
+
+          <p>
+            [Write your own heartfelt message here.]
+          </p>
+
+        </div>
+
+        <p class="letter-signature">
+          Always wishing you happiness,<br>
+          Rihan ♡
+        </p>
+
+      </article>
+
+      <button class="main-button next-button" id="loveNextButton">
+        ONE LAST QUESTION →
+      </button>
+
+    </div>
+
+  </section>
+
+
+  <!-- PAGE 5: PROPOSAL -->
+  <section class="page" id="proposalPage">
+
+    <div class="proposal-decoration">♡</div>
+
+    <div class="proposal-card">
+
+      <span class="small-heading">THERE IS ONE THING I WANT TO ASK</span>
+
+      <h2>
+        Shrejal,
+        <br>
+        Will You Be Mine?
+      </h2>
+
+      <p>
+        No matter what your answer is,
+        your feelings will always matter.
+      </p>
+
+      <div class="proposal-buttons">
+
+        <button class="main-button yes-button" id="yesButton">
+          YES, I WILL ♡
+        </button>
+
+        <button class="time-button" id="timeButton">
+          I NEED SOME TIME
+        </button>
+
       </div>
-    </section>
+
+      <p class="response-message" id="responseMessage"></p>
+
+    </div>
+
+  </section>
+
+
+  <!-- PAGE 6: CELEBRATION -->
+  <section class="page" id="celebrationPage">
+
+    <div class="celebration-petals" id="celebrationEffects"></div>
+
+    <div class="celebration-card">
+
+      <span class="small-heading">A MOMENT TO REMEMBER</span>
+
+      <div class="celebration-heart">♡</div>
+
+      <h2>
+        You Just Made
+        <br>
+        My World Brighter.
+      </h2>
+
+      <p>
+        One beautiful beginning.
+        One special story.
+      </p>
+
+      <h3>
+        Rihan <span>♥</span> Shrejal
+      </h3>
+
+      <p id="notificationStatus" class="notification-status">
+        Saving your response...
+      </p>
+
+      <button class="main-button" id="replayButton">
+        EXPERIENCE IT AGAIN ↻
+      </button>
+
+    </div>
+
+  </section>
+
+
+  <div class="toast" id="toast"></div>
+
+  <script src="script.js" defer></script>
+
+</body>
+</html>
   </main>
 
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
