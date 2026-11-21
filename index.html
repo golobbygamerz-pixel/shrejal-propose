@@ -10,7 +10,6 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
@@ -18,32 +17,21 @@
 
 <body>
 
-  <!-- BACKGROUND DECORATION -->
   <div class="background-petals" id="backgroundPetals"></div>
 
-  <!-- MUSIC -->
   <audio id="backgroundMusic" loop preload="none">
     <source src="vidssave.com%20Aarzu%20(with%20Asim%20Azhar)%20Official%20Music%20Video%20_%20Asim%20Azhar,%20Noor,%20Khan,%20Madhurxo%2048KBPS.mp3" type="audio/mpeg">
   </audio>
 
-  <button class="music-control" id="musicToggle" aria-label="Play or pause music">
-    ♫
-  </button>
+  <button class="music-control" id="musicToggle" aria-label="Play or pause music">♫</button>
 
   <!-- PAGE 1: WELCOME -->
   <section class="page active" id="welcomePage">
-
     <div class="welcome-card">
-
       <span class="small-heading">A LITTLE SOMETHING FOR YOU</span>
-
       <div class="welcome-flower">✿</div>
 
-      <h1>
-        Rihan
-        <span>×</span>
-        Shrejal
-      </h1>
+      <h1>Rihan <span>×</span> Shrejal</h1>
 
       <p class="welcome-subtitle">
         Some stories are written in the stars.
@@ -51,176 +39,99 @@
       </p>
 
       <button class="main-button" id="enterButton">
-        ENTER MY WORLD
-        <span>♡</span>
+        ENTER MY WORLD <span>♡</span>
       </button>
 
-      <div class="welcome-footer">
-        MADE WITH LOVE, JUST FOR YOU
-      </div>
-
+      <div class="welcome-footer">MADE WITH LOVE, JUST FOR YOU</div>
     </div>
-
   </section>
-
 
   <!-- PAGE 2: ENVELOPE -->
   <section class="page" id="envelopePage">
-
     <div class="page-heading">
       <span class="small-heading">A LITTLE SURPRISE</span>
-
       <h2>Something for you...</h2>
-
-      <p>
-        I have written something that comes straight from my heart.
-      </p>
+      <p>I have written something that comes straight from my heart.</p>
     </div>
 
     <div class="envelope-area">
-
       <button class="envelope" id="openEnvelope" aria-label="Open your letter">
-
         <div class="envelope-back"></div>
-
         <div class="letter-preview">
           <span>DEAR SHREJAL,</span>
           <p>A little story about us...</p>
         </div>
-
         <div class="envelope-front"></div>
-
         <div class="envelope-flap"></div>
-
         <div class="envelope-seal">♡</div>
-
       </button>
 
-      <p class="envelope-caption">
-        TAP THE ENVELOPE TO OPEN
-      </p>
-
+      <p class="envelope-caption">TAP THE ENVELOPE TO OPEN</p>
     </div>
-
   </section>
 
-
-  <!-- PAGE 3: OUR STORY LETTER -->
+  <!-- PAGE 3: OUR STORY -->
   <section class="page" id="storyPage">
-
     <div class="letter-container">
-
       <span class="small-heading">A LETTER FROM RIHAN</span>
 
       <article class="letter-sheet">
-
         <div class="letter-decoration">✿</div>
-
         <p class="letter-greeting">Dear Shrejal,</p>
-
         <h2>Our Little Story</h2>
 
         <div class="letter-content" id="storyContent">
-
-          <p>
-            [Write how your story started here.]
-          </p>
-
-          <p>
-            [Add your favourite memories and special moments here.]
-          </p>
-
-          <p>
-            [Write what makes your connection special.]
-          </p>
-
+          <p>[Write how your story started here.]</p>
+          <p>[Add your favourite memories and special moments here.]</p>
+          <p>[Write what makes your connection special.]</p>
         </div>
 
-        <p class="letter-signature">
-          With love,<br>
-          Rihan ♡
-        </p>
-
+        <p class="letter-signature">With love,<br>Rihan ♡</p>
       </article>
 
       <button class="main-button next-button" id="storyNextButton">
         TURN THE PAGE →
       </button>
-
     </div>
-
   </section>
-
 
   <!-- PAGE 4: LOVE LETTER -->
   <section class="page" id="lovePage">
-
     <div class="letter-container">
-
       <span class="small-heading">A FEW WORDS FROM MY HEART</span>
 
       <article class="letter-sheet">
-
         <div class="letter-decoration">♡</div>
-
         <p class="letter-greeting">For you, Shrejal...</p>
-
         <h2>Things I Want You To Know</h2>
 
         <div class="letter-content" id="loveContent">
-
-          <p>
-            [Write what you appreciate about her.]
-          </p>
-
-          <p>
-            [Add the little things that make her special to you.]
-          </p>
-
-          <p>
-            [Write your own heartfelt message here.]
-          </p>
-
+          <p>[Write what you appreciate about her.]</p>
+          <p>[Add the little things that make her special to you.]</p>
+          <p>[Write your own heartfelt message here.]</p>
         </div>
 
-        <p class="letter-signature">
-          Always wishing you happiness,<br>
-          Rihan ♡
-        </p>
-
+        <p class="letter-signature">Always wishing you happiness,<br>Rihan ♡</p>
       </article>
 
       <button class="main-button next-button" id="loveNextButton">
         ONE LAST QUESTION →
       </button>
-
     </div>
-
   </section>
-
 
   <!-- PAGE 5: PROPOSAL -->
   <section class="page" id="proposalPage">
-
     <div class="proposal-decoration">♡</div>
 
     <div class="proposal-card">
-
       <span class="small-heading">THERE IS ONE THING I WANT TO ASK</span>
 
-      <h2>
-        Shrejal,
-        <br>
-        Will You Be Mine?
-      </h2>
+      <h2>Shrejal,<br>Will You Be Mine?</h2>
 
-      <p>
-        No matter what your answer is,
-        your feelings will always matter.
-      </p>
+      <p>No matter what your answer is, your feelings will always matter.</p>
 
       <div class="proposal-buttons">
-
         <button class="main-button yes-button" id="yesButton">
           YES, I WILL ♡
         </button>
@@ -228,41 +139,25 @@
         <button class="time-button" id="timeButton">
           I NEED SOME TIME
         </button>
-
       </div>
 
       <p class="response-message" id="responseMessage"></p>
-
     </div>
-
   </section>
-
 
   <!-- PAGE 6: CELEBRATION -->
   <section class="page" id="celebrationPage">
-
     <div class="celebration-petals" id="celebrationEffects"></div>
 
     <div class="celebration-card">
-
       <span class="small-heading">A MOMENT TO REMEMBER</span>
-
       <div class="celebration-heart">♡</div>
 
-      <h2>
-        You Just Made
-        <br>
-        My World Brighter.
-      </h2>
+      <h2>You Just Made<br>My World Brighter.</h2>
 
-      <p>
-        One beautiful beginning.
-        One special story.
-      </p>
+      <p>One beautiful beginning. One special story.</p>
 
-      <h3>
-        Rihan <span>♥</span> Shrejal
-      </h3>
+      <h3>Rihan <span>♥</span> Shrejal</h3>
 
       <p id="notificationStatus" class="notification-status">
         Saving your response...
@@ -271,22 +166,13 @@
       <button class="main-button" id="replayButton">
         EXPERIENCE IT AGAIN ↻
       </button>
-
     </div>
-
   </section>
 
-
-  <div class="toast" id="toast"></div>
-
-  <script src="script.js" defer></script>
-
-</body>
-</html>
-  </main>
-
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
   <script src="script.js" defer></script>
+
 </body>
 </html>
 </html>
