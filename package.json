@@ -1,0 +1,20 @@
+
+{
+  "name": "rihan-shrejal-universe",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Rihan and Shrejal romantic proposal website",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "dev": "node --watch backend/server.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "express-rate-limit": "^8.1.0",
+    "helmet": "^8.1.0",
+    "nodemailer": "^7.0.6",
+    "dotenv": "^17.2.2",
+    "express-basic-auth": "^1.2.1"
+  }
+}
