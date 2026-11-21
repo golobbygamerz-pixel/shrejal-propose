@@ -194,8 +194,3 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 }
-
-// START WEBSITE
-
-createBackgroundFlowers();
-});
